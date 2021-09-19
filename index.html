@@ -11,7 +11,7 @@
   }
 </style>
 <title>Card example bootstrap</title>
-<body>
+<body onload="loadInitialCardData()">
     
 
 
@@ -45,7 +45,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" onclick="saveChanges()">Save changes</button>
+          <button type="button" class="btn btn-primary" onclick="saveChanges()" data-bs-dismiss="modal">Save changes</button>
         </div>
       </div>
     </div>
@@ -54,7 +54,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand fw-bold text-primary" href="#">Navbar</a>
+          <a class="navbar-brand fw-bold text-primary" href="#">Tasky</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -91,21 +91,8 @@
 
         </div>
 
-        <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <div class="card">
-                    <div class="card-header d-flex justify-content-end gap-2">
-                        <button type="button" class="btn btn-outline-success"> <i class="fas fa-pencil-alt"></i> </button>
-                        <button type="button" class="btn btn-outline-danger"> <i class="fas fa-trash-alt"></i> </button>
-                    </div>
-                    <div class="card-body">
-                        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" class="card-img-top" alt="...">
-                      <h5 class="card-title mt-3 fw-bold text-primary">Title</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-            </div>
+        <div class="row task__container">
+            
 
         </div>
       </div>
